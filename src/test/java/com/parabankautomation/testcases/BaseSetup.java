@@ -45,6 +45,6 @@ public ThreadLocal<WebDriver> driver=new ThreadLocal<WebDriver>();
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDown() {
-		//driver.get().quit();
+		driver.get().quit();
 	}
 }
